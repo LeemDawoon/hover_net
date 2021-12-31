@@ -102,6 +102,7 @@ def get_dataset(name):
         "kumar": lambda: __Kumar(),
         "cpm17": lambda: __CPM17(),
         "consep": lambda: __CoNSeP(),
+        # TODO: conic
     }
     if name.lower() in name_dict:
         return name_dict[name]()
